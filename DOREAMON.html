@@ -1,0 +1,239 @@
+<html>
+<head>
+<title>DOREAMON</title>
+<style>
+body {
+    margin: 0;
+    font-family:"Saira",san-serif;
+}
+
+.bg {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/478/78/327/5bd2b872869b5-wallpaper-preview.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(15px);
+    color: white;
+    padding: 10px 40px;
+    position: sticky; 
+    top: 0;
+    border-radius: 60px;
+    margin: 10px;
+    z-index: 1000;   
+}
+
+.nlink{
+    list-style:none;
+    display:flex;
+    gap:25px;
+    margin:0;
+    padding:0;
+
+}
+.nlink a{
+    color:white;
+    text-decoration:none;
+    padding:20px;
+    font-size:20px
+}
+.nlink a:hover {
+    color:aqua;
+    background-color: rgba(214, 211, 211, 0.63);
+    border-color:aqua;
+    margin:5px;
+    border-radius:16px;
+    
+
+}
+.logo{
+    font-weight: bold;
+    font-size:50px;
+    padding: 0px 20px;
+    
+}
+.main{
+    display:flex;
+    background: rgba(255,255,255,0.25);
+    height: 500px;
+    width: auto;
+    margin-left:50px;
+    margin-right:50px;
+}
+.side{
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(15px);
+    width:20%;
+    height: auto;
+}
+
+.link{
+    padding:20px;
+    margin:5px;
+}
+
+.link li{
+    list-style:none;
+    margin:25px 0;         
+}
+
+.link a{
+    display:block;          
+    color:white;
+    text-decoration:none;
+    padding:15px;          
+    font-size:20px;
+    border:2px solid white; 
+    border-radius:16px;
+    text-align:center;
+   
+}
+
+.link a:hover{
+    color:aqua;
+    background-color: rgba(214, 211, 211, 0.63);
+    border-color:aqua;
+}
+
+.client{
+   width:auto;
+   height:auto;
+   background: rgba(255,255,255,0.25);
+   display:flex;
+   align-items:center;
+   font-size:30px;
+   margin-left:50px;
+   margin-right:50px;
+   display:block;
+}
+
+.imageb{
+    display:flex;
+    height:300px;
+    width:100%;
+}
+#i1{
+    width:25%;
+}
+#i2{
+    width:25%;
+}
+#i3{
+    width:25%;
+}
+.b{
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.4);
+    color: white;
+
+    padding: 12px 22px;
+    border-radius: 30px;
+    margin-left:750px;
+    margin-bottom:10px;
+
+}
+.b:hover{
+    color:aqua;
+    background-color: rgba(214, 211, 211, 0.63);
+    border-color:aqua;
+}
+
+
+
+.ab{
+    margin:200px 300px;
+    width: 200px;
+    height: 200px;
+    border: 4px solid aqua;
+    position: relative;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.ms {
+    width: 40px;
+    height: 40px;
+    background-color: #e74c3c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: moveInSquare 4s infinite linear;
+}
+
+@keyframes moveInSquare {
+    0%   { top: 0; left: 0; }
+    25%  { top: 0; left: 160px; }
+    50%  { top: 160px; left: 160px; }
+    75%  { top: 160px; left: 0; }
+    100% { top: 0; left: 0; }
+}
+</style>
+</head>
+<body id="top">
+    <div class="bg"></div>
+    <br>
+    <nav class="navbar">
+        <div class="logo">Doreamon</div>
+        <ul class="nlink">
+            <li><a href="#">Home</a></li>  
+            <li><a href="#">About</a></li>  
+            <li><a href="#">Movies</a></li>  
+            <li><a href="#">Seasons</a></li>  
+         
+        </ul>
+    </nav>
+    <br>
+    <div class="client">
+            <marquee id="m" direction="right">
+            <div class="imageb">
+                 <image id="i1" src="https://c4.wallpaperflare.com/wallpaper/210/50/431/5bd2b866832bf-wallpaper-preview.jpg"></image>
+                <image id="i2" src="https://c4.wallpaperflare.com/wallpaper/729/888/988/5bd2b8881c81a-wallpaper-thumb.jpg"></image>
+                <image id="i3" src="https://c4.wallpaperflare.com/wallpaper/210/50/431/5bd2b866832bf-wallpaper-preview.jpg"></image>
+                <image id="i3" src="https://wallpapercave.com/wp/wp5002357.jpg"></image>
+                <image id="i3" src="https://wallpapercave.com/wp/wp5737980.jpg"></image>
+                <image id="i3" src="https://wallpapers.com/images/hd/sad-nobita-and-shizuka-sparkle-j4riz6n990247qcp.jpg"></image>
+             </div>
+             </marquee>
+    </div>
+    <br>
+    <div class="main">
+        <div class="side">
+            
+            <ul class="link">
+                <li><a href="#">Stream</a></li>  
+                <li><a href="#">Wallpers</a></li>  
+                <li><a href="#">Blogs</a></li>  
+                <li><a href="#">Articles</a></li> 
+                <li><a href="#">Characters</a></li> 
+         
+             </ul>
+        </div>
+       
+        <div class="ab">
+            <div class="ms"></div>
+        </div>
+</div>
+        
+    </div>
+    <br>
+    
+   <br>
+   <a href="#top">
+   <button class="b">Top</button>
+   </a>
+</body>
+</html>
