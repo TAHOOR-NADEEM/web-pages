@@ -1,0 +1,256 @@
+<html>
+    <head>
+        <title>WINE.CO</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;>
+        <style>
+       .b{
+        background:black;
+        margin:0;
+       }
+       .navbar{
+        display:flex;
+        position:sticky;
+        z-index: 1000;
+        background: rgba(255,255,255,0.25);
+        backdrop-filter: blur(15px);
+        color: rgb(158, 50, 50);
+        padding:15px 20px;
+        margin:10px;
+        border-radius: 10px;
+        gap:50px;
+       }
+    
+       .nlink{
+        float:left;
+        list-style: none;
+        display:flex;
+        gap:40px;
+        margin:0;
+        padding:20px;
+       }
+
+     .nlink a{
+    text-decoration: none;
+    color: rgb(158, 50, 50);
+    font-weight: bold;
+    font-size: 17px;
+    padding: 12px 22px; 
+    border-radius: 10px;
+}
+
+    .nlink a:hover{
+    background-color: rgba(214, 211, 211, 0.63);
+    }
+
+
+       .logo{
+        font-weight: bold;
+        font-size:50px;
+       }
+       .main{
+        display:flex;
+        justify-content:center;
+        margin:0;
+        padding:0;
+        height:500px;   
+       }
+       .box{
+           width:45%;
+           margin-top:0;
+           
+       }
+       #img{
+      
+        width:100%;
+        border-radius:16px;
+        margin-top:50px;
+        height: 500px;
+        transition: transform 0.3s ease; 
+       }
+       #image:hover{
+        transform: scale(1.5); 
+       }
+      
+       .info{
+        width:30%;
+        padding:10px;
+        text-align:center;
+        margin:50px;
+        background: rgba(255,255,255,0.25);
+        backdrop-filter: blur(15px);
+        border-radius: 16px;
+        height: 620px;
+     
+       }
+       .info>h1{
+        color:whitesmoke;
+        font-size:55px;
+        margin:0;
+       }
+       .info>h4{
+        color:whitesmoke;
+        font-size:18px;
+        margin:2px;
+       }
+       
+       .info>h3{
+        text-align:left;
+        color:white;
+        font-size:20px;
+        display:flex;
+        margin:0;
+        
+       }
+       
+       .info>h2{
+        text-align:left;
+        color:rgba(255, 255, 255, 0.685);
+       }
+       .price{
+        display:flex;
+        gap:10px;
+        padding-left:20px;
+        color:white;
+        font-size: 20px;
+       }
+       #dis{
+        color:grey;
+        text-decoration:line-through;
+       }
+
+       .bb{
+        margin:40px;
+         background: rgba(255,255,255,0.25);
+         backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.4);
+        color: white;
+        padding: 12px 40px;
+       border-radius: 30px;
+       width:50%;
+       }
+       .bb:hover{
+        color:rgb(158, 50, 50);
+        background-color: rgba(214, 211, 211, 0.63);
+        border-color:rgb(158, 50, 50);
+       }
+       .lim{
+        border-radius:16px;
+        text-align: center;
+        color:white;
+        background-color:rgba(255, 246, 246, 0.63);
+        backdrop-filter: blur(10px);
+        height: 180px;
+        margin-top:50px;
+        padding:10px;
+       }
+       .lim i{
+        font-size: 20px;
+       }
+       .side {
+    color: white;
+    width: 90%;
+    display: flex;
+}
+
+.side > img {
+    width: 27%;
+    padding: 5px;
+    margin: 0;
+    padding-top: 10px;
+    border-radius: 20px;
+    height: 130px;
+    transition: transform 0.3s ease; 
+}
+
+.side > img:hover {
+    transform: scale(1.5); 
+}
+
+    .search{
+    display: flex;
+    align-items: center;
+    flex: 1;              
+    max-width: 350px;
+    margin-top:15px;
+    }
+
+.search input{
+    width: 100%;
+    padding: 10px 15px;   
+    border-radius: 10px;
+    color: rgb(158, 50, 50);
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(10px);
+    border: none;
+    box-sizing: border-box;
+}
+
+.search i{
+    font-size: 18px;
+    margin-left: 10px;
+    color: rgb(158, 50, 50);
+}
+
+        
+        </style>
+    </head>
+
+    <body class="b">
+    
+      <nav class="navbar">
+            <div class="logo">Cabernet Sauvignon</div>
+            <form class="search">
+                <input type="search" id="input" name="query" placeholder="Search...">
+                <i class="fa fa-search"></i>
+            </form>
+            <ul class="nlink">
+                <li><a href="#">Shop</a></li>  
+                <li><a href="#">New Arrival</a></li>  
+                <li><a href="#">Review</a></li>  
+                <li><a href="#">About</a></li>  
+             
+            </ul>
+      </nav>
+      <br>
+      <div class="main">
+        <div class="box">
+            <img id="img" src="https://winefridge.sg/cdn/shop/articles/Winebottle.png?v=1727418690">
+            <div class="side">
+                <img src="https://winefridge.sg/cdn/shop/articles/Winebottle.png?v=1727418690">
+                <img src="https://winefridge.sg/cdn/shop/articles/Winebottle.png?v=1727418690">
+                <img src="https://winefridge.sg/cdn/shop/articles/Winebottle.png?v=1727418690">
+                <img src="https://winefridge.sg/cdn/shop/articles/Winebottle.png?v=1727418690">
+            </div>
+         </div>
+         <div class="info">
+            <h1>Smith & Hook</h1>
+          <h4>Cabernet Sauvignon</h4>
+          <div class="price">
+            <h3>$400</h3>
+          <h3 id="dis">
+                $600
+          </h3>
+          </div>
+          
+          <h2><i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star"style="color:yellow"></i>
+                <i class="fa fa-star"style="color:yellow"></i>
+                <i class="fa fa-star"style="color:yellow"></i>
+                <i class="fa fa-star"style="color:yellow"></i>
+               Rated 4.8/5 Reviews(500k+)
+            </h2>
+            <button class="bb">Add To Bag</button>
+            <div class="lim">
+                <H2>LIMITED EDITION!</H2>
+                <h3>Grab The Finest Now!</h3>
+                <i class="fa fa-glass"style="color:red"></i>
+                <i class="fa fa-glass"style="color:red"></i>
+            </div>
+         </div>
+        
+      </div>
+      
+      
+    </body>
+</html>
